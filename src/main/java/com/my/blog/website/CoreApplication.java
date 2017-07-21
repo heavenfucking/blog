@@ -18,7 +18,7 @@ import javax.sql.DataSource;
 @MapperScan("com.my.blog.website.dao")
 @SpringBootApplication
 @EnableTransactionManagement
-public class CoreApplication {
+public class CoreApplication  {
     @Bean(initMethod = "init", destroyMethod = "close")
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource dataSource() {
